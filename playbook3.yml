@@ -1,0 +1,9 @@
+---
+- name: echoing scripts
+  hosts: all
+  tasks:
+    - name: echo
+      win_shell: C:\Temp\docker.ps1 >> C:\Temp\logs.txt
+
+
+

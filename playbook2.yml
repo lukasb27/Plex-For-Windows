@@ -1,0 +1,10 @@
+---
+- name: test chocolatey with ansible
+  hosts: all
+  tasks:
+    - name: wincopy
+      win_copy:
+        src: /Users/lukasball/temp/docker.ps1
+        dest: C:\Temp\docker.ps1
+
+

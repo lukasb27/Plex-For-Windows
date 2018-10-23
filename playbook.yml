@@ -1,0 +1,14 @@
+---
+- name: deploy choco with EVERYTHING
+  hosts: all
+  tasks:
+    - name: Install EVERYTHING
+      win_chocolatey:
+        name:
+          - googlechrome
+          - git
+          - docker-for-windows
+          - python3
+          - plexmediaserver
+          - deluge
+        state: present
